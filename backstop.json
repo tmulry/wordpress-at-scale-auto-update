@@ -24,8 +24,8 @@
   "scenarios": [
     {
       "label": "Homepage",
-      "url": "http://live-jwupstream.pantheonsite.io/",
-      "referenceUrl": "http://update-wp-jwupstream.pantheonsite.io/",
+      "url": "http://dev-mulryci.pantheonsite.io/",
+      "referenceUrl": "http://mulryci1-mulryci.pantheonsite.io/",
       "hideSelectors": [],
       "selectors": [
         "document"
