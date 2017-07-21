@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MULTIDEV="update-wp"
+MULTIDEV="mulryci1"
 SITENAME="scalewp.io"
 
 UPDATES_APPLIED=false
