@@ -9,7 +9,7 @@ This script will:
 1. Authenticate with [Terminus](https://github.com/pantheon-systems/terminus) via machine token
 2. Delete the multidev environment `update-wp`
 3. Recreate the multidev environment `update-wp`
-	* Deletion and recreation is done to clear any existing changes and pull the latest database/files from the live environment 
+	* Deletion and recreation is done to clear any existing changes and pull the latest database/files from the live environment
 4. Switch the multidev environment `update-wp` to Git mode
 5. [Apply Pantheon upstream updates](https://pantheon.io/docs/upstream-updates/)
 	* WordPress core updates are managed in the upstream
@@ -36,7 +36,7 @@ This script will:
 	* `SLACK_CHANNEL`: The Slack channel to post notifications to
 	* `SLACK_USERNAME`: The username to post to Slack with
 3. Add an [SSH key to Pantheon](https://pantheon.io/docs/ssh-keys/) and [to the CircleCI project](https://circleci.com/docs/permissions-and-access-during-deployment/).
-4. Update `SITE_NAME` and `MULTIDEV` in `bin/auto-update.sh` with with the desired site name and multidev site.
+4. Update `SITENAME` and `MULTIDEV` in `bin/auto-update.sh` with with the desired site name and multidev site.
 5. Update _scenarios_ in `backstop.json` with URLs for pages you wish to check with visual regression
 	* `url` refers to the live URL and `referenceUrl` refers to the same page on the Pantheon multidev environment
 6. Ping the [CircleCI API](https://circleci.com/docs/api/) at the desired frequency, e.g. daily, to run the script
